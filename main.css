@@ -1,0 +1,134 @@
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#calculatorDiv {
+    margin-bottom: 20px;
+    border: 1px solid lightgrey;
+    width: 400;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+        "Display Display Display Cancel"
+        "AC power factorial divide"
+        "b9 b8 b7 multiply"
+        "b6 b5 b4 subtract"
+        "b3 b2 b1 add"
+        "change b0 point result";
+    gap:1px 1px;
+    background-color: orange;
+
+}
+
+#displayDiv{
+    grid-area: Display;
+    text-align: right;
+    height: 80px;
+}
+
+#upperDisplay {
+    height: 30%;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+
+#lowerDisplay {
+    height: 70%;
+    font-size: 32px;
+    padding: 5px;    
+}
+
+#multiplyBtn {
+    grid-area: multiply;
+}
+
+#subtractBtn {
+    grid-area: subtract;
+}
+
+#addBtn {
+    grid-area: add;
+}
+
+#resultBtn {
+    grid-area: result;
+}
+
+#Btn9 {
+    grid-area: b9;
+}
+
+#Btn8 {
+    grid-area: b8;
+}
+
+#Btn7 {
+    grid-area: b7;
+} 
+
+#Btn6 {
+    grid-area: b6 ;
+} 
+
+#Btn5 {
+    grid-area: b5 ;
+} 
+
+#Btn4 {
+    grid-area: b4 ;
+} 
+
+#Btn3 {
+    grid-area: b3 ;
+} 
+
+#Btn2 {
+    grid-area: b2 ;
+} 
+
+#Btn1 {
+    grid-area: b1 ;
+} 
+
+#Btn0 {
+    grid-area: b0 ;
+} 
+
+#pointBtn {
+    grid-area: point;
+}
+
+#communicationPanel {
+    width: 800px;
+    height: 100px;
+    margin-bottom: 150px;
+    padding-top: 50px;;
+    background: azure;
+    text-align: center;
+    color: orangered;
+    font-size: 30px;
+}
+
+.button {
+    font-size: 20px;
+    border: none;
+}
+
+.special {
+    font-weight: bold;
+}
+
+
+
+#cancel {
+    font-size: 30px;
+    color:peru;
+}
