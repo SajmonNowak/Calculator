@@ -1,11 +1,6 @@
 
 body {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
 }
 
 #calculatorDiv {
@@ -109,7 +104,6 @@ body {
 #communicationPanel {
     width: 800px;
     height: 100px;
-    margin-bottom: 150px;
     padding-top: 50px;
     text-align: center;
     color: orangered;
