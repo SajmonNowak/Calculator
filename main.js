@@ -74,9 +74,7 @@ function Input (){
         break;
         case 'addBtn':
         displayNumber += ' + ';
-        console.log(displayNumber);
         rawData += displayNumber;
-        console.log(rawData);
         resetDisplay();
         break;
         case 'subtractBtn':
@@ -126,7 +124,6 @@ function Input (){
     
     displayInput();
     displayRawData();
-    console.log(displayNumber);
 }
 
 function checkFactorial () {
